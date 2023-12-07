@@ -1,0 +1,37 @@
+{
+  "namespace": "com.services.streamsDemo.avro.schema",
+  "type": "record",
+  "name": "EmployeeVehicle",
+  "fields": [
+    {
+      "name": "empId",
+      "type": "int",
+      "default": -1
+
+    },
+    {
+      "name": "vehicleNumber",
+      "type": "float",
+      "default": -100.00
+
+    },
+    {
+      "name": "vehicleName",
+      "type": ["null","string"],
+      "default": null
+
+    },
+    {
+      "name": "insuranceDetails",
+      "type": ["null","string"],
+      "default": null
+
+    },
+    {
+      "name": "manufacturingYear",
+      "type": "float",
+      "default": -100.00
+
+    }
+  ]
+}
