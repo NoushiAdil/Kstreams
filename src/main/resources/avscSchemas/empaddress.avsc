@@ -6,49 +6,49 @@
     {
       "name": "empId",
       "type": "int",
-      "default": -1
+
 
     },
     {
       "name": "houseName",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "streetName",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "city",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "postcode",
       "type": "float",
-      "default": -100.00
+
 
     },
     {
       "name": "district",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "state",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "country",
       "type": ["null","string"],
-      "default": null
+
 
     }
   ]

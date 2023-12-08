@@ -1,4 +1,4 @@
-package com.services.streamsDemo.StreamsProcessor;
+package com.services.streamsDemo.Joins;
 
 import com.services.streamsDemo.avro.schema.EmpFullDetails;
 import com.services.streamsDemo.avro.schema.EmployeeAddress;

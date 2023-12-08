@@ -6,31 +6,31 @@
     {
       "name": "empId",
       "type": "int",
-      "default": -1
+
 
     },
     {
       "name": "firstName",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "lastName",
       "type": ["null","string"],
-      "default": null
+
 
     },
     {
       "name": "age",
       "type": "float",
-      "default": -100.00
+
 
     },
     {
       "name": "sex",
       "type": ["null","string"],
-      "default": null
+
 
     }
   ]
