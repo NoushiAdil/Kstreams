@@ -5,51 +5,35 @@
   "fields": [
     {
       "name": "empId",
-      "type": "int",
-
-
+      "type": "int"
     },
     {
       "name": "houseName",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "streetName",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "city",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "postcode",
-      "type": "float",
-
-
+      "type": "float"
     },
     {
       "name": "district",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "state",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "country",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     }
   ]
 }

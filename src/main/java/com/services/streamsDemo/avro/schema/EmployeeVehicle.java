@@ -14,7 +14,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class EmployeeVehicle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 295773214438059098L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EmployeeVehicle\",\"namespace\":\"com.services.streamsDemo.avro.schema\",\"fields\":[{\"name\":\"empId\",\"type\":\"int\",\"default\":-1},{\"name\":\"vehicleNumber\",\"type\":\"float\",\"default\":-100.0},{\"name\":\"vehicleName\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"insuranceDetails\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"manufacturingYear\",\"type\":\"float\",\"default\":-100.0}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EmployeeVehicle\",\"namespace\":\"com.services.streamsDemo.avro.schema\",\"fields\":[{\"name\":\"empId\",\"type\":\"int\"},{\"name\":\"vehicleNumber\",\"type\":\"float\"},{\"name\":\"vehicleName\",\"type\":[\"null\",\"string\"]},{\"name\":\"insuranceDetails\",\"type\":[\"null\",\"string\"]},{\"name\":\"manufacturingYear\",\"type\":\"float\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();

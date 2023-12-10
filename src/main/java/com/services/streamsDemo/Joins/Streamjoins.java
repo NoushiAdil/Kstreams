@@ -3,8 +3,11 @@ package com.services.streamsDemo.Joins;
 import com.services.streamsDemo.avro.schema.EmpFullDetails;
 import com.services.streamsDemo.avro.schema.EmployeeAddress;
 import com.services.streamsDemo.avro.schema.EmployeePersonal;
+import org.springframework.context.annotation.Bean;
+
 
 public class Streamjoins {
+
     public static EmpFullDetails setempFullDetails(EmployeePersonal personalKStream, EmployeeAddress addressKStream) {
         EmpFullDetails empFullDetails = new EmpFullDetails();
         if(personalKStream!=null) {

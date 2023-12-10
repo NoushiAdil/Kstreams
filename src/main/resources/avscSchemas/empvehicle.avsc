@@ -5,33 +5,23 @@
   "fields": [
     {
       "name": "empId",
-      "type": "int",
-
-
+      "type": "int"
     },
     {
       "name": "vehicleNumber",
-      "type": "float",
-
-
+      "type": "float"
     },
     {
       "name": "vehicleName",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "insuranceDetails",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "manufacturingYear",
-      "type": "float",
-
-
+      "type": "float"
     }
   ]
 }

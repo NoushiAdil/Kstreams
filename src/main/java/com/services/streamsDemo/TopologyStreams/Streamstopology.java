@@ -17,15 +17,17 @@ import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.JoinWindows;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.Materialized;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.time.Duration;
 import java.util.Properties;
 
 import static io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG;
-
+@Configuration
 public class Streamstopology {
-
-    public void run() throws Exception{
+    @Bean
+    public void run() {
         final Properties streamsConfiguration = new Properties();
         // Give the Streams application a unique name.
         streamsConfiguration.put(StreamsConfig.APPLICATION_ID_CONFIG, "avro-stream-join-app");
@@ -60,11 +62,21 @@ public class Streamstopology {
                         (aggKey,oldValue,newValue) -> Streamjoins.aggregateSet(oldValue,newValue),
                         Materialized.as("queryable-store-name"))
                 .toStream();
-
+        //The aggkey in aggregate joins is used to specify the grouping columns for the join operation.
+        // When we perform an aggregate function on a table, we need to specify the columns that we want to group by.
+        // The aggkey parameter is used to specify these columns in the join operation.
+        //groupByKey is a method in Kafka Streams that groups the records of a stream by their key.
+        // It returns a KGroupedStream object, which can be used to perform aggregation operations on the grouped records
+        //EmpFullDetails::new: a constructor reference that creates a new EmpFullDetails object.
+        //(aggKey,oldValue,newValue) -> Streamjoins.aggregateSet(oldValue,newValue):
+        // a lambda expression that takes three arguments and returns a Set of EmpFullDetails objects.
+        // This lambda expression is used to merge the values of the EmpFullDetails objects in the collection.
         System.out.println("Stream After Outer-Join Operation:"+outerJoinedStream);
 
         // Build and start the Kafka Streams application
         Topology topology = builder.build();
+        //is used to build a topology in the context of KafkaStreams. A topology is a directed acyclic graph (DAG) of processing nodes, where each node represents a processing
+        // The TopologyBuilder class is used to define the topology of the stream processing application. The builder.build() method returns the constructed topology
         KafkaStreams streams = new KafkaStreams(topology, streamsConfiguration);
         streams.start();
     }

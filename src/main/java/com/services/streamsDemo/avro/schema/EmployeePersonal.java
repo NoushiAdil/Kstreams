@@ -14,7 +14,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class EmployeePersonal extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 4407911844128771987L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EmployeePersonal\",\"namespace\":\"com.services.streamsDemo.avro.schema\",\"fields\":[{\"name\":\"empId\",\"type\":\"int\",\"default\":-1},{\"name\":\"firstName\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"lastName\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"age\",\"type\":\"float\",\"default\":-100.0},{\"name\":\"sex\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EmployeePersonal\",\"namespace\":\"com.services.streamsDemo.avro.schema\",\"fields\":[{\"name\":\"empId\",\"type\":\"int\"},{\"name\":\"firstName\",\"type\":[\"null\",\"string\"]},{\"name\":\"lastName\",\"type\":[\"null\",\"string\"]},{\"name\":\"age\",\"type\":\"float\"},{\"name\":\"sex\",\"type\":[\"null\",\"string\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();

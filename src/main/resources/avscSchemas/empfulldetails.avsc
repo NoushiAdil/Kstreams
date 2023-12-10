@@ -5,87 +5,67 @@
   "fields": [
     {
       "name": "empId",
-      "type": "int",
-
+      "type": "int"
     },
     {
       "name": "firstName",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "lastName",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "age",
-      "type": "float",
-
+      "type": "float"
     },
     {
       "name": "sex",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "houseName",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "streetName",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "city",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "postcode",
-      "type": "float",
-
+      "type": "float"
     },
     {
       "name": "district",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "state",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "country",
-      "type": ["null","string"],
-
+      "type": ["null","string"]
     },
     {
       "name": "vehicleNumber",
-      "type": "float",
-
-
+      "type": "float"
     },
     {
       "name": "vehicleName",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "insuranceDetails",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "manufacturingYear",
-      "type": "float",
-
-
+      "type": "float"
     }
   ]
 }

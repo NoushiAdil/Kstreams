@@ -5,33 +5,23 @@
   "fields": [
     {
       "name": "empId",
-      "type": "int",
-
-
+      "type": "int"
     },
     {
       "name": "firstName",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "lastName",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     },
     {
       "name": "age",
-      "type": "float",
-
-
+      "type": "float"
     },
     {
       "name": "sex",
-      "type": ["null","string"],
-
-
+      "type": ["null","string"]
     }
   ]
 }
